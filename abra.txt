@@ -1,0 +1,97 @@
+using System;
+using System.Collections.Generic;
+class answer4(){
+        string userName;
+        int age;
+        answer4(string n, int a){
+            this.userName = n;
+            this.age = a;
+        }
+        //adding getter and setter
+    }
+public class HelloWorld
+{
+    public static List<client> GetUsersData(Gender g){
+        //validation
+        if(g.getType != string)return;
+        List<client> clients = new List<client>();
+        int i = 10;
+        
+        Navigate
+        
+        foreach(client c in this.data){
+            if(c.getGender == g){
+                if(i >10)clients.Add(c);
+                i--;
+            }
+            if(i == 0){
+                break;
+            }
+        }
+        return clients;
+    }
+    public static string GetMostPopularCountry(){
+        Dictionary<string, int> countries = new Dictionary<string, int>();
+        for(int i = 0; i<5000; i++){
+            //this iteration country
+            Random rand = new Random();
+            string country = this.data.getClient(Math.round(rand.next(0,99000))).country;
+            // a new country, adding to the dict
+            if(!countries.ContainsKey(c){
+                country.Add(country, 1);
+            }
+            else{
+                //this country already exics
+                int j = counties.Keys.ToList().IndexOf(country);
+                countries[j]++;
+            }
+        }
+        //return the most popular
+        var maxKey = countries.Aggregate((l, r) => l.Value > r.Value ? l : r).Key;
+        return maxKey;
+
+    }
+    public static List<string> GetListOfMails(){
+        List<string> mails = new List<string>();
+        for(int i = 0; i<30; i++){
+            Random rand = new Random;
+            mails.Add(this.data.getClient(Math.round(rand.Next(0,99000))).email);
+        }
+        return mails;
+    }
+    public static  answer4 GetTheOldestUser(){
+        List<string, int> users = new List<string, int>();
+        for(int i = 0; i < 100; i++){
+            Random rand = new Random();
+            string name = this.data.getClient(Math.round(rand.next(0,99000).name);
+            int age = this.data.getClient(Math.round(rand.next(0,99000).age);
+            users.Add(name, age);
+        }
+        var maxKey = users.Aggregate((l, r) => l.Value > r.Value ? l : r).Key;
+        answer4 result = new answer4();
+        result.setName(maxKey);
+        result.setAge(users[maxKey]);
+        return result;
+        
+    }
+    
+    public static void CreateNewUser(int id, string name string email, string gender, string phone, int age){
+        client c = this.data.addClient(id, name, email, gender, phone, age);
+        return c;
+    }
+    public static void GetNewUser(int id){
+        foreach(int id1 in this.data.clients.id){
+            if(id === id1){
+                return id1;
+            }
+        }
+    }
+    public static void UpdateUserData(int id){
+        return;
+    }
+    
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Hello World");
+    }
+}
